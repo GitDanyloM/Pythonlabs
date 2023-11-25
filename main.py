@@ -1,13 +1,20 @@
 from lab5 import Pet, Home, Kind
 
-dog = Pet("Buddy", "Golden Retriever", 3, "Hello, I'm Buddy!", 30, Kind.DOG)
+dog = Pet("Buddy", "Golden Retriever", 4, "Hello, I'm Buddy!", 30, Kind.DOG)
 cat = Pet("Kitty", "Siamese", 2, "Meow!", 10, Kind.CAT)
 bird = Pet("Polly", "Parrot", 1, "Hello, I'm Polly!", 1, Kind.BIRD)
+bird2 = Pet("Polly", "Parrot", 1, "Hello, I'm Polly!", 1, Kind.BIRD)
 
 home = Home()
-home.add(dog)
-home.add(cat)
-home.add(bird)
+
+home.add_pet(dog)
+home.add_pet(cat)
+home.add_pet(bird)
+home.add_pet(bird2)
+
+print(str(dog))
+print(str(cat))
+print(str(bird))
 
 print(home.friends_of_pet(dog))
 print(home.friends_of_pet(cat))
