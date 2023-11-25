@@ -19,11 +19,13 @@ print(str(bird))
 print(home.friends_of_pet(dog))
 print(home.friends_of_pet(cat))
 print(home.friends_of_pet(bird))
+
 for pet in home.pets:
     print(f"{pet.name} is polite: {pet.is_polite()}")
 
 
 home.sort_pets_by_age()
 print("Pets sorted by age:")
+
 for pet in home.pets:
     print(f"{pet.name} - {pet.age} years old")
